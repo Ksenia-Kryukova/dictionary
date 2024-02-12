@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My dictionary</title>
+    </head>
+    <body>
+
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+            <td width="50%">
+            <h2>Original word</h2>
+            {% for i in words1 %}
+            <p>{{ i }}</p>
+            {% endfor %}
+            </td>
+            <td width="50%">
+            <h2>Translated word</h2>
+            {% for i in words2 %}
+            <p>{{ i }}</p>
+            {% endfor %}
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>

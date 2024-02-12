@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My dictionary</title>
+    </head>
+    <body>
+        <h1>Add a new word for learning</h1>
+        <form action="" method="post">
+            <label for="word1">Original word:</label><br>
+            <input type="text" id="word1" name="word1" required><br>
+            <label for="word2">Translated word:</label><br>
+            <input type="text" id="word2" name="word2" required><br>
+            <input type="submit" value="Submit">
+            {% csrf_token %}
+          </form>
+    </body>
+</html>
